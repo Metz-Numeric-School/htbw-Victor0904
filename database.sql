@@ -1,6 +1,6 @@
 -- Création de la base de données
-CREATE DATABASE IF NOT EXISTS habit_tracker;
-USE habit_tracker;
+--CREATE DATABASE IF NOT EXISTS habit_tracker;
+--USE habit_tracker;
 
 -- Suppression si existante
 DROP TABLE IF EXISTS habit_logs;

@@ -3,7 +3,7 @@
 -- Single demo user + several habits + habit_logs
 -- =====================================================
 
-USE habit_tracker;
+--USE habit_tracker;
 
 -- Insert demo user (id fixe pour cohérence)
 -- Note: password is plain text for demo only; in real app use password_hash()
