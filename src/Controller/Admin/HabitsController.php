@@ -32,7 +32,9 @@ class HabitsController extends AbstractController
             $habit = $_POST['habit'];
                         
             if(empty($habit['name']))
-                $errors['name'] = 'Le Nom est obligatoire';
+                $errors['name'] = 'Le nom est obligatoire';
+            if(empty($habit['user_id']))
+                $errors['user_id'] = 'Un utilisateur est obligatoire';
 
             if(empty($habit['description']))
                 $errors['description'] = 'La description est obligatoire';
