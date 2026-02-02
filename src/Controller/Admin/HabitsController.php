@@ -39,7 +39,7 @@ class HabitsController extends AbstractController
             
             if(count($errors) == 0)
             {
-                $id = $this->userRepository->insert($habit);
+                $id = $this->habitRepository->insert($habit);
                 header('Location: /admin/habit');
                 exit;
             }
