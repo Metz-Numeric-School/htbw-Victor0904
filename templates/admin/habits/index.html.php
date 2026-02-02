@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($habits as $habits): ?>
+                    <?php foreach ($habits as $habit): ?>
                         <tr>
                             <td><?php echo $habitsuser->getId() ?></td>
                             <td><?php echo $habits->getName() ?></td>
