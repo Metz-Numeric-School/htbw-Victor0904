@@ -21,9 +21,9 @@
                 <tbody>
                     <?php foreach ($habits as $habit): ?>
                         <tr>
-                            <td><?php echo $habits->getId() ?></td>
-                            <td><?php echo $habits->getName() ?></td>
-                            <td><?php echo $habits->getDescription() ?></td>
+                            <td><?php echo $habit->getId() ?></td>
+                            <td><?php echo $habit->getName() ?></td>
+                            <td><?php echo $habit->getDescription() ?></td>
                           
                         </tr>
                     <?php endforeach; ?>
