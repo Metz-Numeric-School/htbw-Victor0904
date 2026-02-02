@@ -23,31 +23,5 @@ class HabitsController extends AbstractController
         ]);
     }
 
-    public function new()
-    {
-        $errors = [];
-
-        if(!empty($_POST['habit']))
-        {
-            $habit = $_POST['habit'];
-            
-            if(empty($habit['name']))
-                $errors['name'] = 'Le Nom est obligatoire';
-
-            if(empty($habit['description']))
-                $errors['description'] = 'La description est obligatoire';
-
-            
-            if(count($errors) == 0)
-            {
-                $id = $this->habitRepository->insert($habit);
-                header('Location: /admin/habits');
-                exit;
-            }
-        }
-
-        return $this->render('admin/habits/new.html.php', [
-            'errors' => $errors,
-        ]);
-    }
+    
 }

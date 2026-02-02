@@ -6,9 +6,6 @@
         <div class="col">
             <h1>Habitudes</h1>
         </div>
-        <div class="col-auto">
-            <a href="/admin/habits/new" class="btn btn-primary">Nouveau</a>
-        </div>
     </div>
 
     <div class="row">
