@@ -33,7 +33,7 @@
     },
     {
         "path": "/admin/habits",
-        "controller": "App\\Controller\\Admin\\UserController",
+        "controller": "App\\Controller\\Admin\\HabitsController",
         "action": "index",
         "guard": "App\\Guard\\AdminGuard"
     },
