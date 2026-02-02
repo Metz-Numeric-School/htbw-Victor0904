@@ -13,17 +13,18 @@ class HabitRepository extends AbstractRepository
         return EntityMapper::mapCollection(Habit::class, $habits->fetchAll());
     }
 
-    public function find(int $id)
+  public function find(int $id)
     {
-        $habit = $this->getConnection()->query("SELECT * FROM habits WHERE id = $id");
-        return EntityMapper::map(Habit::class, $habit->fetch());
+        $stmt = $this->getConnection()->prepare("SELECT * FROM habits WHERE id = :id");
+        $stmt->execute(['id' => $id]);
+        return EntityMapper::map(Habit::class, $stmt->fetch());
     }
 
     public function findByUser(int $userId)
     {
-        $sql = "SELECT * FROM habits WHERE user_id = $userId";
-        $query = $this->getConnection()->query($sql);
-        return EntityMapper::mapCollection(Habit::class, $query->fetchAll());
+        $stmt = $this->getConnection()->prepare("SELECT * FROM habits WHERE user_id = :user_id");
+        $stmt->execute(['user_id' => $userId]);
+        return EntityMapper::mapCollection(Habit::class, $stmt->fetchAll());
     }
 
      /**
