@@ -16,6 +16,12 @@
                 Utilisateurs
             </a>
         </li>
+        <li>
+            <a href="/admin/habits" class="nav-link <?= $_SESSION['current_uri'] == '/admin/habits' ? 'active' : '' ?>">
+                <i class="bi bi-people me-2"></i>
+                Habitudes
+            </a>
+        </li>
     </ul>
     <?php if(isset($_SESSION['user'])): ?>
     <hr>
