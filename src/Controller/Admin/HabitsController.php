@@ -1,23 +1,23 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Repository\HabitsRepository;
+use App\Repository\HabitRepository;
 use Mns\Buggy\Core\AbstractController;
 
 class HabitsController extends AbstractController
 {
 
-    private HabitRepository $habitsRepository;
+    private HabitRepository $habitRepository;
 
     public function __construct()
     {   
-        $this->habitsRepository = new habitsRepository();
+        $this->habitRepository = new habitRepository();
     }
 
 
     public function index()
     {
-        $usehabitsrs = $this->habitsRepository->findAll();
+        $usehabitsrs = $this->habitRepository->findAll();
         return $this->render('admin/habtis/index.html.php', [
             'habits' => $habits,
         ]);
@@ -40,7 +40,7 @@ class HabitsController extends AbstractController
             
             if(count($errors) == 0)
             {
-                $id = $this->habitsRepository->insert($habit);
+                $id = $this->habitRepository->insert($habit);
                 header('Location: /admin/habits');
                 exit;
             }
