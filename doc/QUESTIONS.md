@@ -42,9 +42,9 @@ Une fois les premières étapes réalisées, vous devez vous connecter si vous n
 Une fois l'achat validé, tout se passe dans votre Espace Client OVH, section Web Cloud" puis Noms de domaine.
 
 Relier le domaine à un site (Hébergement)
-Si votre site est chez un autre prestataire (Shopify, Wix, etc.), vous devez modifier la Zone DNS :
- Enregistrement A : Permet de pointer vers l'adresse IP de votre serveur.
- Enregistrement CNAME : Utile pour les services comme Shopify ou pour configurer les www.
+Selon l'hebergeur  vous devez modifier la Zone DNS :
+  A : Permet de pointer vers l'adresse IP de votre serveur.
+  CNAME : Utile pour les services comme Shopify ou pour configurer les www.
 
 
 
@@ -52,3 +52,4 @@ Si votre site est chez un autre prestataire (Shopify, Wix, etc.), vous devez mod
 4. Comment mettre en place un certificat SSL ?
 
  Activez le certificat SSL gratuit dans l'onglet "Hébergement" pour sécuriser la connexion des visiteurs.
+ Votre site passe alors un test pour savoir si il est éligible à la certification SSL
