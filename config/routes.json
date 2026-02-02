@@ -38,6 +38,12 @@
         "guard": "App\\Guard\\AdminGuard"
     },
     {
+        "path": "/admin/habits/new",
+        "controller": "App\\Controller\\Admin\\HabitsController",
+        "action": "new",
+        "guard": "App\\Guard\\AdminGuard"
+    },
+    {
         "path": "/admin/user/new",
         "controller": "App\\Controller\\Admin\\UserController",
         "action": "new",
