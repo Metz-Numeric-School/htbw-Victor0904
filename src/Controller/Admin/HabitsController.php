@@ -7,7 +7,7 @@ use Mns\Buggy\Core\AbstractController;
 class HabitsController extends AbstractController
 {
 
-    private HabitsRepository $habitsRepository;
+    private HabitRepository $habitsRepository;
 
     public function __construct()
     {   
