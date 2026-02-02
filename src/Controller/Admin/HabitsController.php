@@ -17,7 +17,7 @@ class HabitsController extends AbstractController
 
     public function index()
     {
-        $usehabitsrs = $this->habitRepository->findAll();
+        $habits = $this->habitRepository->findAll();
         return $this->render('admin/habits/index.html.php', [
             'habits' => $habits,
         ]);
