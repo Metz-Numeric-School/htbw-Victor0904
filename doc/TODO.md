@@ -19,3 +19,11 @@ Suite à un audit effectué en amont, voici les failles et les bugs qui ont ét�
 Egalement un oublie du s de habits dans la class habitsController
 
 **ATTENTION : certains bugs n'ont pas été listé**
+
+Par exemple : 
+Il n'y avait pas la partie habitudes quand on se connecte en admin et que l'on veut visualiser l'ensemble des habitudes comme les users
+
+J'ai donc crée un HabitsController lia au HabitRepository
+Crée également dans template un dossier admin/habits avec un fichier index.html.php
+qui permet d'afficher la liste des habitudes créee par les utilisateurs
+Ajout également de la partie New habits depuis le menu admin
